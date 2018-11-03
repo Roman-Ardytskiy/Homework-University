@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Бронь.js</title>
+        <style>
+        body{
+             
+        }
+
+        </style>
+       
+        <link rel="stylesheet" href="css.css">
+    </head>
+
+    <body style="background-attachment:fixed" topmargin='0'>
+        <main id="app">
+            <header>
+                <h1>Заказ столика на ужин.js</h1>
+            </header>
+
+            <ul id="todo-list">
+                <li class="todo-item">
+                    <label class="title">Тестовая ячейчас HTML/CSS/JavaScript</label>
+                    
+                    <button class="delete">Удалить</button>
+                </li>
+            </ul>
+    
+            <form id="todo-form" name="Table">
+                <div class="styled-select">
+               <label for="listTimeName" class="select-label"> Время:</label>
+               
+                <select name="listTimeName" id="listTime">
+                    <option value="17:00 - 19:00">17:00 - 19:00</option>
+                    <option value="19:00 - 21:00">19:00 - 21:00</option>
+                    <option value="21:00 - 23:00">21:00 - 23:00</option>
+                </select>
+            <label for="listPersonsName" class="select-label">Персоны:</label>
+                <select name="listPersonsName" id="listPersons"  >
+                    <option value="2их">2 персоны</option>
+                    <option value="3их">3 персоны</option>
+                    <option value="4ых">4 персоны</option>
+                </select>
+            </div>
+            
+                <button  type="button" onClick="process(); countTime();
+                disabledButton()" >Проверка</button>
+
+                <input  id ="add-input" type="text" name='field'>
+                <button id="add-button" type="submit">Добавить</button>
+            </form>
+
+
+        </main>
+        <div id='nav'>
+        	<div class></div>
+
+
+
+         </div>
+
+        <script src="js.js"></script>
+        <script src="GoDu.js"></script>
+
+
+    </body>
+</html>
