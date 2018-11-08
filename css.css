@@ -17,6 +17,12 @@ ul {
     padding: 0;
 }
 
+span {
+position: relative;
+top: 3px;
+}
+
+
 button, label  {
     background: 0 0;
     border: 0;

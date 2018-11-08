@@ -30,26 +30,26 @@
     
             <form id="todo-form" name="Table">
                 <div class="styled-select">
+                <span>
+                    <input class="checkbox" type="checkbox" id="fastSupper">
+                </span>
+
+
+                 <label for="fastSupper">Быстрый ужин,</label>   
                <label for="listTimeName" class="select-label"> Время:</label>
                
                 <select name="listTimeName" id="listTime">
-                    <option value="17:00 - 19:00">17:00 - 19:00</option>
                     <option value="19:00 - 21:00">19:00 - 21:00</option>
                     <option value="21:00 - 23:00">21:00 - 23:00</option>
                 </select>
-            <label for="listPersonsName" class="select-label">Персоны:</label>
-                <select name="listPersonsName" id="listPersons"  >
-                    <option value="2их">2 персоны</option>
-                    <option value="3их">3 персоны</option>
-                    <option value="4ых">4 персоны</option>
-                </select>
-            </div>
-            
-                <button  type="button" onClick="process(); countTime();
-                disabledButton()" >Проверка</button>
 
-                <input  id ="add-input" type="text" name='field'>
-                <button id="add-button" type="submit">Добавить</button>
+                </div>
+
+                
+                <button  type="button" onClick="process(); " >Проверка</button>
+
+                <input placeholder=" Введите кол-во персон" id ="add-input" type="text" name='field' >
+                <button id="add-button" type="submit">Заказ</button>
             </form>
 
 
