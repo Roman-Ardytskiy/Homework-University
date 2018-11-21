@@ -3,18 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <title>Бронь.js</title>
-        <style>
-        body{
-             
-        }
-
-        </style>
+    
        
         <link rel="stylesheet" href="css.css">
     </head>
 
     <body style="background-attachment:fixed" topmargin='0'>
+
+
+
+
+        <div class="show-login-btn"><i class="fas fa-sign-in-alt">Login Form</i></div>
+
+        <div class="login-box">
+            <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+            <form class="login-form" action="Testing.html" method="post">
+              
+                <h1>Welcom </h1>
+                <input class="txtb" type="text" placeholder="Username">
+                <input class="txtb" type="password" placeholder="Password">
+                <input class=" login-btn" type="submit" value="login">
+            </form>
+        </div>
+
+
+
+
+        <div class="side">
+            <a href="#" style="background:;" title="Что поесть!">Menu</a>
+            <a href="#" style="background:;" title="Что по нам?">History</a>
+        </div>
+
+    
+
+
+
         <main id="app">
             <header>
                 <h1>Заказ столика на ужин.js</h1>
@@ -23,43 +49,41 @@
             <ul id="todo-list">
                 <li class="todo-item">
                     <label class="title">Тестовая ячейчас HTML/CSS/JavaScript</label>
-                    
                     <button class="delete">Удалить</button>
                 </li>
             </ul>
     
             <form id="todo-form" name="Table">
                 <div class="styled-select">
-                <span>
-                    <input class="checkbox" type="checkbox" id="fastSupper">
-                </span>
-
-
-                 <label for="fastSupper">Быстрый ужин,</label>   
-               <label for="listTimeName" class="select-label"> Время:</label>
+                    <span>
+                        <input class="checkbox" type="checkbox" id="fastSupper">
+                    </span>
+                    <label for="fastSupper">Быстрый ужин,</label>   
+                    <label for="listTimeName" class="select-label"> Время:</label>
                
-                <select name="listTimeName" id="listTime">
-                    <option value="19:00 - 21:00">19:00 - 21:00</option>
-                    <option value="21:00 - 23:00">21:00 - 23:00</option>
-                </select>
-
+                    <select name="listTimeName" id="listTime">
+                        <option value="19:00 - 21:00">19:00 - 21:00</option>
+                        <option value="21:00 - 23:00">21:00 - 23:00</option>
+                    </select>
                 </div>
-
-                
                 <button  type="button" onClick="process(); " >Проверка</button>
 
                 <input placeholder=" Введите кол-во персон" id ="add-input" type="text" name='field' >
                 <button id="add-button" type="submit">Заказ</button>
             </form>
-
-
         </main>
-        <div id='nav'>
-        	<div class></div>
 
+        <script>
+            $(".show-login-btn").on("click", function() {
+                $(".login-box").toggleClass("showed");
+            });
+        </script>
 
-
-         </div>
+        <script>
+            $(".hide-login-btn").on("click", function() {
+                $(".login-box").toggleClass("showed");
+            });
+        </script>
 
         <script src="js.js"></script>
         <script src="GoDu.js"></script>
